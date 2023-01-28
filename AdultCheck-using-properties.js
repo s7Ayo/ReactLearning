@@ -9,11 +9,12 @@ function NotAdult() {
   return <h1>You are not an adult - you are less than 18 years old!</h1>;
 }
 function Person(props) {
-  if (props.adulCheck === true){
+  return props.adulCheck === true ? <Adult /> : <NotAdult />
+  /*if (props.adulCheck === true){
     return Adult()
   }else if (props.adulCheck === false){
     return NotAdult()
-  }
+  }*/
 }
 
 function App(){
